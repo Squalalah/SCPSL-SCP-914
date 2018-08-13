@@ -41,8 +41,9 @@ Pour la troisième ligne :
 
 Pour la cinquième ligne :
 
+- "JANITOR_KEYCARD" est le nom de l'objet
 - "VERY_FINE" est le paramètre de 914
-- "JANITOR_KEYCARD","SCIENTIST_KEYCARD","MAJOR_SCIENTIST_KEYCARD" signifique que "JANITOR_KEYCARD" a une chance sur 3 de :
+- "JANITOR_KEYCARD","SCIENTIST_KEYCARD","MAJOR_SCIENTIST_KEYCARD" signifie que "JANITOR_KEYCARD" a une chance sur 3 de :
  
 1. Rester telle qu'elle est
 2. De devenir une "SCIENTIST_KEYCARD" 
