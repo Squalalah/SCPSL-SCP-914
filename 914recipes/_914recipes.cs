@@ -10,10 +10,10 @@ namespace _914recipes
 {
     [PluginDetails(
         author = "Squalalah",
-        name = "912 coin recipe",
-        description = "912 coin recipe",
-        id = "squal.912.coin",
-        version = "0.2",
+        name = "912 recipes",
+        description = "912 recipes",
+        id = "squal.912.recipes",
+        version = "1.1",
         SmodMajor = 3,
         SmodMinor = 1,
         SmodRevision = 12
@@ -22,11 +22,12 @@ namespace _914recipes
     {
         public override void OnDisable()
         {
+            this.Info("912 recipes unloaded successfully.");
         }
 
         public override void OnEnable()
         {
-            this.Info("912 coin recipe loaded successfully :)");
+            this.Info("912 recipes loaded successfully.");
 
         }
 
