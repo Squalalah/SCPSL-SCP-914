@@ -43,7 +43,7 @@ Pour la cinquième ligne :
 
 - "VERY_FINE" est le paramètre de 914
 - "JANITOR_KEYCARD","SCIENTIST_KEYCARD","MAJOR_SCIENTIST_KEYCARD" signifique que "JANITOR_KEYCARD" a une chance sur 3 de :
-> 
- Rester telle qu'elle est
- De devenir une "SCIENTIST_KEYCARD" 
- De devenir "MAJOR_SCIENTIST_KEYCARD"
+ 
+1. Rester telle qu'elle est
+2. De devenir une "SCIENTIST_KEYCARD" 
+3. De devenir "MAJOR_SCIENTIST_KEYCARD"
