@@ -13,7 +13,7 @@ namespace _914recipes
         name = "912 recipes",
         description = "912 recipes",
         id = "squal.912.recipes",
-        version = "1.1",
+        version = "1.2.0",
         SmodMajor = 3,
         SmodMinor = 1,
         SmodRevision = 12
