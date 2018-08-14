@@ -40,8 +40,9 @@ namespace _914recipes
             Scp914 scp914 = UnityEngine.Object.FindObjectOfType<Scp914>();
             if (scp914 == null) { plugin.Info("SCP-914 introuvable pour la création du fichier de configuration"); return; }
             plugin.Info("Nombre de recipes dans scp914 : " + scp914.recipes.Length);
-            if (!System.IO.File.Exists("914recipes.txt"))
+            if (!System.IO.File.Exists("squal_plugins_conf/914recipes.txt"))
             {
+                
                 string text = "";
                 int count = 0;
                 foreach(Scp914.Recipe r in scp914.recipes)
@@ -63,11 +64,12 @@ namespace _914recipes
                     }
                     count++;
                 }
-                System.IO.File.WriteAllText("914recipes.txt", text);
+                if (!Directory.Exists("squal_plugins_conf")) Directory.CreateDirectory("squal_plugins_conf");
+                System.IO.File.WriteAllText("squal_plugins_conf/914recipes.txt", text);
             }
             else
             {
-                string[] text = System.IO.File.ReadAllLines("914recipes.txt");
+                string[] text = System.IO.File.ReadAllLines("squal_plugins_conf/914recipes.txt");
 #pragma warning disable CS0162 // Impossible d'atteindre le code détecté
                 for (int a = 0; a < text.Length; a++)
 #pragma warning restore CS0162 // Impossible d'atteindre le code détecté
