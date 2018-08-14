@@ -43,26 +43,20 @@ namespace _914recipes
             if (!System.IO.File.Exists("914recipes.txt"))
             {
                 string text = "";
-                ItemType type, type2;
-                KnobSetting knob;
-
                 int count = 0;
                 foreach(Scp914.Recipe r in scp914.recipes)
                 {
                     int countstate = 0;
-                    type = (ItemType)count;
-                    text += type.ToString() + "-";
+                    text += ((ItemType)count).ToString() + "-";
                     foreach (Scp914.Recipe.Output o in r.outputs)
                     {
-                        
-                        knob = (KnobSetting)countstate;
-                        if (countstate == 0) text += knob.ToString() + ":";
-                        else text += type.ToString() + "-" + knob.ToString() + ":";
+                        if (countstate == 0) text += ((KnobSetting)countstate).ToString() + ":";
+                        else text += ((ItemType)count).ToString() + "-" + ((KnobSetting)countstate).ToString() + ":";
                         foreach(int i in o.outputs)
                         {
                             
-                            type2 = (ItemType)i;
-                            text += type2.ToString() + ",";
+                            
+                            text += ((ItemType)i).ToString() + ",";
                         }
                         text += Environment.NewLine;
                         countstate++;
