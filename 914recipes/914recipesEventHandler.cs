@@ -7,11 +7,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.IO;
-using System.Xml.Serialization;
 
 namespace _914recipes
 {
-    [XmlType("_914recipes._914recipesEventHandler")]
     class _914recipesEventHandler : IEventHandlerRoundStart
     {
         private Plugin plugin;
