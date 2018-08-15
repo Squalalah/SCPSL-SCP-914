@@ -16,7 +16,7 @@ SCPSL-SCP-914 vous permet de modifier les recettes de la machine sur votre serve
 
 # Fonctionnement
 
-Une fois le serveur lancé, un fichier "914recipes.txt" va apparaitre dans la racine du serveur.
+Une fois le serveur lancé, un fichier "squal_plugins_conf/914recipes.txt" va apparaitre dans la racine du serveur.
 Celui-ci va vous permettre d'ajouter/retirer des objets à obtenir par conversion selon l'objet mis en INTAKE et le paramètre choisi.
 
 **Exemples**
